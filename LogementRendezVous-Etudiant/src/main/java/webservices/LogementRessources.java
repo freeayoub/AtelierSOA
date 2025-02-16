@@ -52,7 +52,8 @@ public class LogementRessources {
         if (!result) {
             return Response.status(404).entity("Impossible de mettre à jour le logement").build();
         }
-        return Response.status(200).entity("Logement mis à jour avec succès").build();
+        return Response.status(201).header("Access-Control-Allow-Origin", "*")
+                .entity("Logement mis à jour avec succès").build();
     }
 
 
