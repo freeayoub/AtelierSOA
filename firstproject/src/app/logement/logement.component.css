@@ -1,0 +1,99 @@
+/* Centrer le conteneur */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Style des cartes */
+  .card {
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image de la carte */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Corps de la carte */
+  .card-body {
+    text-align: left;
+    padding: 15px;
+  }
+  
+  /* Titre */
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Texte de la carte */
+  .card-text {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Conteneur des boutons */
+  .card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  
+  /* Style des boutons */
+  .btn {
+    flex: 1;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    padding: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Couleurs des boutons */
+  .btn-info {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-warning {
+    background-color: #ff9800;
+    border: none;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  /* Responsive: 2 colonnes sur tablette, 1 colonne sur mobile */
+  @media (max-width: 992px) {
+    .col-md-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

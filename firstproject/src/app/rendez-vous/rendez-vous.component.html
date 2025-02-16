@@ -1,0 +1,16 @@
+<div class="container">
+  <h2 class="text-center my-4">Liste des Rendez-vous</h2>
+  <div class="rendezvous-list">
+    <ul>
+      <li *ngFor="let rendezvous of rendezvousList">
+        <p> Rendez-vous N° : {{ rendezvous.id }} - Date :{{ rendezvous.date  }} à l'heure :{{ rendezvous.heure  }} - téléphone: {{ rendezvous.numTel }}</p>
+        <p class="card-text"><strong>Type:</strong> {{ rendezvous.logement.type }}</p>
+        <p class="card-text">
+          <strong>Description:</strong> {{ rendezvous.logement.description }}
+        </p>
+        <button (click)="update(rendezvous)" class="btn btn-warning">Mettre à jour</button>
+        <button (click)="delete(rendezvous.id)" class="btn btn-danger">Supprimer</button>
+      </li>
+    </ul>
+  </div>
+</div>

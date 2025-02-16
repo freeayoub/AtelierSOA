@@ -31,7 +31,7 @@ public class RendezVousBusiness {
     }
 
     public void setListeRendezVous(List<RendezVous> listeRendezVous) {
-        this.listeRendezVous = listeRendezVous;
+        RendezVousBusiness.listeRendezVous = listeRendezVous;
     }
     public List<RendezVous> getListeRendezVousByLogementReference(int reference) {
         List<RendezVous> liste=new ArrayList<RendezVous>();

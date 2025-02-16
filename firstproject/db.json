@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Iphone 18",
+      "price": 200,
+      "quantity": "5",
+      "like": 0
+    },
+    {
+      "id": 8,
+      "title": "tatattttttttt",
+      "price": "555",
+      "quantity": "5",
+      "like": "5"
+    }
+  ]
+}
